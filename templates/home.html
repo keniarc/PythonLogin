@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Inicio</h1>
+<h2>Bienvenido{{usuario.nombre}}</h2>
+
+<img src="{{url_for('static', filename='uploads/' + usuario.foto)}}" width="200px" alt="Foto de perfil">
+
+{% endblock %}
